@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="templates/css/sign_up_style.css" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link rel="icon" type="image/png" href="templates/images/sign_up.png" />
+
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>Sign Up</header>
+
+      <form action="/register" class="validated-form" method="POST" novalidate>
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Full Name</label>
+                <input class="form-control"
+                type="text" 
+                name="username"
+                id="username"
+                placeholder="Enter your name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input class="form-control"
+                type="text" 
+                name="email"
+                id="email"
+                placeholder="Enter your email" required />
+              </div>
+
+              <div class="input-field">
+                <label>Password</label>
+                <input class="form-control"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="nextBtn">
+            <span class="btnText">Submit</span>
+          </button>
+
+          <span class="backBtn"
+            ><label>Already have an account?</label
+            ><a class="link" href="login_page.html">
+              <h4>Login Now</h4>
+            </a></span
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
